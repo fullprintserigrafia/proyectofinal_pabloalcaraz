@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Oswald&family=Roboto:wght@700&display=swap');
+*{
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;    
+}
+html{
+    scroll-behavior: auto;
+}
+.inicio{
+    background-color: rgb(48, 43, 43);
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    color: antiquewhite;
+}
+.inicio .seccion-inicio{
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 10px;
+    text-align: center;
+    
+}
+
+.inicio  .navegador{
+    position: fixed;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: left;
+    display: none;   
+}
+.inicio .navegador{
+    margin-left: -50px;
+}
+
+.inicio .seccion-inicio .navegador a{
+    display: block;
+    color:  rgb(240, 234, 76);
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 30px;
+    border: 1px solid  rgb(240, 234, 76);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inicio .seccion-inicio .barraNavegador{
+    color:rgb(240, 234, 76);
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    margin-left: -100px;
+    
+}
+
+.inicio .seccion-inicio  h1{
+    text-shadow: 0 0 5px  rgb(240, 234, 76);
+    font-size: 50px;
+    color: black;
+
+}
+.inicio .seccion-inicio  h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.inicio .seccion-inicio .redesSociales{
+    margin: 20px 0;
+}
+.inicio .seccion-inicio .redesSociales a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(240, 234, 76);
+    color:black;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .5s;
+}
+.inicio .seccion-inicio .redesSociales a:hover{
+    color: rgb(240, 234, 76);
+    box-shadow: 0 0 20px white;
+
+}
+.inicio .seccion-inicio .foto img{
+    
+    border-radius: 50%;
+    border: 3px solid black;
+
+}
+/*Sobre mí*/
+.sobreMi{
+    background-color: rgb(194, 179, 179);
+    padding: 140px 0 100px 0;
+    text-align: center ;
+    
+    
+}
+.tituloDeSeccion{
+    color: black;
+    padding-bottom: 30px;
+
+}
+.sobreMi .seccionSobreMi{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobreMi .seccionSobreMi {
+    color: rgb(53, 48, 48);
+    
+
+}
+.sobreMi .seccionSobreMi .destacado{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.sobreMi .seccionSobreMi p{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 42, 42);
+}
+
+
+
+.sobreMi .seccionSobreMi  .fila{
+    display: inline-flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.sobreMi .seccionSobreMi .fila .columna i{
+    color: black;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color:rgb(240, 234, 76) ;
+}
+.sobreMi .seccionSobreMi .fila .columna span{
+    color:black;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sobreMi .seccionSobreMi .fila .columna p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+/*habilidades*/
+
+.habilidades{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 30px 0 60px 0;
+    background-color: rgb(240, 234, 76) ;
+    background-size: cover;
+    background-position: center center;   
+    
+}
+.habilidades h2{
+    text-align: center;
+}
+.habilidades p {
+    text-align: center;
+}
+.conten-bar {
+    display: block;
+    display: none; 
+}
+.habilidades span {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-style: inherit;
+    margin-left: 85px;
+}
+
+.habilidades  .barra{
+    width: 900px;
+    height: 15px;
+    background: rgb(194, 179, 179) ;
+    margin-left: 270px;
+    border-radius: 10px;  
+}
+
+.habilidades  .html {
+    background-color: rgb(9, 240, 63) ;
+    text-align: right;
+    width: 900px;
+    height: 15px;
+    border-radius: 10px;
+    animation: Aumentar 5s forwards;
+}
+
+@keyframes Aumentar{
+    0%{width: 0 }
+    100%{width: 93%;}
+}
+.habilidades  .css {
+    background-color: rgb(9, 240, 63)  ;
+    text-align: right;
+    width: 900px;
+    height: 15px;
+    border-radius: 10px;
+    animation: aumhtml 5s forwards;
+}
+
+@keyframes aumhtml{
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+.habilidades  .js {
+    background-color: rgb(214, 151, 15) ;
+    text-align: right;
+    width: 900px;
+    height: 15px;
+    border-radius: 10px;
+    animation: aumcss 5s forwards;
+}
+
+@keyframes aumcss{
+    0%{width: 0;}
+    100%{width: 60%;}
+}
+.habilidades  .cd {
+    background-color:rgb(9, 240, 63)  ;
+    text-align: right;
+    width: 900px;
+    height: 15px;
+    border-radius: 10px;
+    animation: aumcd 5s forwards;
+}
+
+@keyframes aumcd{
+    0%{width: 0;}
+    100%{width: 87%;}
+}
+.habilidades  .il {
+    background-color: rgb(238, 9, 9) ;
+    text-align: right;
+    width: 900px;
+    height: 15px;
+    border-radius: 10px;
+    animation: aumil 5s forwards;
+}
+
+@keyframes aumil{
+    0%{width: 0;}
+    100%{width: 42%;}
+}
+.habilidades  .ps {
+    background-color:  rgb(214, 151, 15) ;
+    text-align: right;
+    width: 900px;
+    height: 15px;
+    border-radius: 10px;
+    animation: aumps 5s forwards;
+}
+
+@keyframes aumps{
+    0%{width: 0;}
+    100%{width: 58%;}
+}
+
+
+
+/*educacion y trabajos*/
+.formacion{
+    background-color:  rgb(194, 179, 179) ;
+    padding: 30px 0 30px 0;
+    text-align: left;
+    
+}
+.formacion h2{
+    text-align: center;
+    max-width: 1000px;
+    margin-left: 190px;
+}
+
+.formacion .seccionFormacion{
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+.formacion span{
+    color: rgb(240, 234, 76);
+    background-color: black;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline-flex;
+    max-width: 1000px;
+    margin-left: 170px;
+  
+}
+.formacion .datos  h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+    max-width: 1000px;
+    margin-left: 170px;
+}
+
+.formacion .datos  .trabajo{
+    text-align: left;
+    margin-left: 30px;
+    max-width: 1000px;
+    margin-left: 170px;
+
+}
+.formacion .datos  .estudio{
+    text-align: left;
+    margin-left: 30px;
+    max-width: 1000px;
+    margin-left: 170px;
+
+}
+.formacion .datos  p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    
+}
+.formacion .datos p{
+    border: 1px solid black;
+    font-size: 12px;
+    max-width: 1000px;
+    margin-left: 170px;
+}
+.formacion .datos{
+    display: -ms-inline-grid;
+}
+/*contacto*/
+.contacto{
+    background-color: rgb(48, 43, 43);
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    color: antiquewhite;
+    text-align: center;
+}
+.contacto .titulo{
+    max-width: 1000px;
+    margin-left: 10px;
+}
+.contacto h3{
+    max-width: 1000px;
+    margin-left: 10px;
+}
+.contacto .seccionContacto{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .seccionContacto{
+    margin-bottom: 15;
+}
+
+.contacto .seccionContacto .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .seccionContacto .fila .columna{
+    margin-top: 50px;
+    max-width: 1000px;
+    margin-left: 70px;
+    
+}
+.contacto .seccionContacto .fila .columna h2{
+    color: rgb(240, 234, 76) ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+}
+.contacto .seccionContacto .columna span{
+    text-transform: lowercase;
+}
+/*responsive*/
+
+@media screen and (max-width: 800px){
+    .inicio{
+        height: 360px;
+    }
+    .inicio .seccion-inicio .barraNavegador{
+        width:30px ;
+        height: 30px;
+        border-radius: 0 0 0 0 ;
+        margin-left: 5px;
+        font-size: 25px;
+        position: fixed;
+        line-height: normal;
+    }
+
+    .inicio  .navegador{
+        display: block;
+        margin-left: 5px;
+        width: 90%;
+        display: none;
+        
+    }
+    .inicio .informacion{
+        width: 60%;
+        text-align: center;
+        margin-left: 70px;
+    }
+
+    .sobreMi{
+        height: 730px;
+        
+    }
+    
+    .sobreMi .tituloDeSeccion{
+        display: block;
+    }
+    .sobreMi .seccionSobreMi{
+        width: 60%;
+    }
+   
+    .sobreMi .seccionSobreMi .fila {
+        display: block;
+            
+    }
+    .sobreMi .seccionSobreMi .fila .columna{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+         
+          
+    }
+    .habilidades .barra{
+        width: 50%;
+        margin-left: 95px;
+       
+        
+    }
+    .habilidades .titulo{
+        text-align: center;
+        position: relative;
+        display: block;
+        margin-left: 10px;     
+        margin-bottom: 1px;
+        
+    }
+    .formacion .titulo-seccion{
+        text-align: center;
+        margin-left: 70px;
+        display: block;
+        width: 60%;
+    }
+    
+    .formacion  h4{
+        
+        width: 100%;
+        text-align: center;
+        display: block;    
+        margin-left: -90px;
+    }
+    .formacion  span{
+        margin-left: 75px;
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+    .formacion .datos p{
+        width: 60%;
+        text-align: center;
+        display: block;
+        margin-left: 70px;
+    }
+    .formacion h5{
+        text-align: center;
+        width: 95%;
+        margin-left: -80px;
+        display: block;
+    }
+  
+    .formacion .datos h3{
+        margin-left: 140px;
+        
+    }
+    .contacto{
+        height: 400px;
+    }
+    .contacto h2{
+        text-align: center;
+        margin-left: 60px;
+        margin-left: -80px;
+        
+    }
+   .contacto .titulo{
+    width: 60%;
+    text-align: center;
+    margin-left: 65px;
+    display: block;
+   }
+    .contacto .info {
+        text-align: center;
+        margin-left:-70px;
+        width: 60%;
+    }
+    .contacto .seccionContacto .fila  {
+        width: 100%;
+        display: block;
+        
+    }
+}
