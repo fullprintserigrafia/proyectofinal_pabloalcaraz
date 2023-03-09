@@ -401,10 +401,9 @@ html{
         height: 30px;
         border-radius: 0 0 0 0 ;
         margin-left: 5px;
-        margin: 2px;
         font-size: 25px;
         position: fixed;
-        line-height: normal;
+        line-height: 30px;
     }
 
     .inicio  .navegador{
